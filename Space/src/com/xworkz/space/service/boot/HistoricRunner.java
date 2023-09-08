@@ -22,6 +22,7 @@ public class HistoricRunner {
 		HistrocialService.places("narasimhaswamytemple");
 		HistrocialService.places("belur");
 		
+		
 	}
 
 }

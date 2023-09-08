@@ -7,13 +7,16 @@ import com.xworkz.crud.app.service.TrainNoServiceImpl;
 
 public class TrainNoRunner {
 
+
 	public static void main(String[] args) {
 		
 TrainNoRepositry trainNoRepositry = new TrainNoRepositryImpl();
 		
-		TrainNoService pincodeService = new TrainNoServiceImpl(trainNoRepositry);
+		TrainNoService trainNoService = new TrainNoServiceImpl(trainNoRepositry);
 		trainNoService.store(10114);
 		trainNoService.store(10115);
+		trainNoService.store(10114);
+
 	}
 
 }

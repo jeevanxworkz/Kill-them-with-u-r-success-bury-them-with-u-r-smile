@@ -7,7 +7,7 @@ public class GroceryServiceImpl implements Groceryservice {
 	private GroceryRepositry groceryRepositry;
 	
 	public GroceryServiceImpl(GroceryRepositry grtistRepositry) {
-		this.groceryRepositry=groceryRepositry;
+		this.groceryRepositry.save(grocery);;
 	}
 
 	@Override
@@ -16,6 +16,7 @@ public class GroceryServiceImpl implements Groceryservice {
 		if(grocery!=null && !grocery.isEmpty() && grocery.length() >=0 && grocery.length() >=3)
 		{
 			System.out.println("Grocery data is valid");
+			this.groceryRepositry.save(grocery);
 		}
 		else {
 			System.err.println("Grocery data is invalid");

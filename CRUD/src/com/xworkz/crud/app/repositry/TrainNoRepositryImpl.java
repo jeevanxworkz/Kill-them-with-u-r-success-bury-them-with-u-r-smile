@@ -24,6 +24,14 @@ public class TrainNoRepositryImpl implements TrainNoRepositry {
 			if(temp==trainNo) {
 				System.out.println("trainNo already exist");
 				return true;
+				
+				
+				
+				
+				
+				
+				
+				
 			}
 		}
 			

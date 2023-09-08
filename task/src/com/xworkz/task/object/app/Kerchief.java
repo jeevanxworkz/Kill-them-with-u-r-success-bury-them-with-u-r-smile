@@ -27,7 +27,7 @@ public class Kerchief {
 	}
 	@Override
 	public String toString() {
-		System.out.println("invoking ToString in cave");
+		System.out.println("invoking ToString in Kerchiefs");
         return "brand:"+brand+"color:"+color+"size:"+size+"price:"+price+"type:"+type+"washable:"+washable+"isPrinted:"+isPrinted;
         }
 }

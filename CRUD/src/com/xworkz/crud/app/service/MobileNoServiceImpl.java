@@ -1,7 +1,6 @@
 package com.xworkz.crud.app.service;
 
 import com.xworkz.crud.app.repositry.MobileNoRepositry;
-import com.xworkz.crud.app.service.MobileNoService;
 
 
 

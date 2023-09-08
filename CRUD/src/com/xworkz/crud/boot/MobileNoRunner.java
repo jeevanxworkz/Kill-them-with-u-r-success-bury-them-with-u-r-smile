@@ -6,11 +6,15 @@ import com.xworkz.crud.app.service.MobileNoService;
 import com.xworkz.crud.app.service.MobileNoServiceImpl;
 
 public class MobileNoRunner {
+	public static void main(String[] args) {
+		
 	
 	MobileNoRepositry mobileNoRepositry = new MobileNoRepositryImpl();
 	
-	MobileNoService mobileNoService = new MobileNoServiceImpl(mobileNoRepositry);
-	mobileNoService.store(8310308343L);
-	mobileNoService.store(7026220424L);
+	MobileNoServiceImpl   mobileNoService = new MobileNoServiceImpl(mobileNoRepositry);
+	mobileNoService.validateAndSave(8310308343L);
+	mobileNoService.validateAndSave(8310308343L);
+	mobileNoService.validateAndSave(7892119582L);
 
+	}
 }
