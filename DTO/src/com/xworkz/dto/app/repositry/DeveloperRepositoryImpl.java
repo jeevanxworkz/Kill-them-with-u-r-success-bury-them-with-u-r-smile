@@ -57,12 +57,12 @@ public class DeveloperRepositoryImpl implements DeveloperRepository {
 	}
 	
 	@Override
-	public DeveloperDTO findbyWorkingFor(String workingFor) {
-		System.out.println("running findbyworkingFor"+workingFor);
+	public DeveloperDTO findbyWorkingFor(String name) {
+		System.out.println("running findbyworkingFor"+name);
 		for(int index=0;index<this.position;index++) 
 		{
 			DeveloperDTO dto=this.dtos[index];
-			if(dto.getName().equals(workingFor)) 
+			if(dto.getName().equals(name)) 
 			{
 				System.out.println("dto is found");
 				return dto;
@@ -70,7 +70,7 @@ public class DeveloperRepositoryImpl implements DeveloperRepository {
 			else 
 			{
 				System.err.println("name is not found");
-				return DeveloperRepository.super.findbyWorkingFor(workingFor);
+				return DeveloperRepository.super.findbyWorkingFor(name);
 
 			}
 		}
@@ -79,12 +79,12 @@ public class DeveloperRepositoryImpl implements DeveloperRepository {
 
 	@Override
 	
-	public DeveloperDTO findbyDesignation(String Designation) {
-		System.out.println("running findbyDesignation"+Designation);
+	public DeveloperDTO findbyDesignation(String name) {
+		System.out.println("running findbyDesignation"+name);
 		for(int index=0;index<this.position;index++) 
 		{
 			DeveloperDTO dto = this.dtos[index];
-			if(dto.getName().equals(Designation)) 
+			if(dto.getName().equals(name)) 
 			{
 				System.out.println("data is found");
 				return dto;
@@ -92,7 +92,7 @@ public class DeveloperRepositoryImpl implements DeveloperRepository {
 			else 
 			{
 				System.err.println("data is not found");
-				return DeveloperRepository.super.findbyDesignation(Designation);
+				return DeveloperRepository.super.findbyDesignation(name);
 
 			}
 		}
